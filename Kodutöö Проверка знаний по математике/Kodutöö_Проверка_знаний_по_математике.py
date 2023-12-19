@@ -7,7 +7,7 @@ while True:
     try:
         dif = int(input("Выбери сложность(1-Easy/2-Medium/3-Hard): "))
         break
-    except ValueError:
+    except:
         pass
 
 print("Выбрана сложность {}".format(dif))
@@ -16,7 +16,7 @@ while True:
     try:
         q_quest = int(input("Введите количество вопросов: "))
         break
-    except ValueError:
+    except:
         pass
 
 print("Ответьте на {} вопроса(ов)".format(q_quest))
@@ -40,7 +40,7 @@ if dif == 1:
             try:
                 answ = int(input("Введите свой ответ: "))
                 break
-            except ValueError:
+            except:
                 pass
 
         if oper == "+":
@@ -64,7 +64,7 @@ if dif == 2:
             try:
                 answ = int(input("Введите свой ответ: "))
                 break
-            except ValueError:
+            except:
                 pass
 
         if oper == "+":
@@ -107,7 +107,7 @@ if dif == 3:
             try:
                 answ = int(input("Введите свой ответ: "))
                 break
-            except ValueError:
+            except:
                 pass
 
         if oper == "+":
